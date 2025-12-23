@@ -12,7 +12,7 @@ class TestQuarter(unittest.TestCase):
         self.assertEqual(Quarter(2023, 4).to_date(), date(2023, 10, 1))
 
     def test_str(self):
-        self.assertEqual(str(Quarter(2023, 3)), "Q3 2023")
+        self.assertEqual(str(Quarter(2023, 3)), "2023Q3")
 
     def test_add_quarters(self):
         self.assertEqual(Quarter(2023, 4).add_quarters(1), Quarter(2024, 1))
